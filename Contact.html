@@ -4,52 +4,45 @@
     <meta charset="UTF-8">
     <title>Contact Us</title>
 
-    <!-- Correct CSS link -->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- REQUIRED CSS FILES -->
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/style.css">
 </head>
-<body>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="About.html">About Us</a>
-        <a href="Contact.html" class="active">Contact Us</a>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">Dealer Review</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">About Us</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/contact">Contact Us</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
-    <section>
-        <h1>Contact Us</h1>
-        <p>
-            If you have any questions, feedback, or need support, feel free to contact us
-            using the details below.
-        </p>
-    </section>
+    <!-- CONTACT CONTENT -->
+    <div class="container mt-4">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out to us.</p>
 
-    <section class="contact-details">
-
-        <div class="contact-item">
-            <img src="images/location.png" alt="Office Location">
-            <h3>Office Address</h3>
-            <p>123 Main Street, Springfield, USA</p>
+        <!-- REQUIRED IMAGES -->
+        <div class="mb-3">
+            <img src="/static/images/contactus.png" alt="Contact Us" width="300">
+            <img src="/static/images/cars.jpeg" alt="Cars" width="300">
         </div>
 
-        <div class="contact-item">
-            <img src="images/phone.png" alt="Phone">
-            <h3>Phone</h3>
-            <p>+1 555 123 4567</p>
-        </div>
-
-        <div class="contact-item">
-            <img src="images/email.png" alt="Email">
-            <h3>Email</h3>
-            <p>support@dealerreviews.com</p>
-        </div>
-
-        <div class="contact-item">
-            <img src="images/support.png" alt="Support">
-            <h3>Support Hours</h3>
-            <p>Monday – Friday: 9:00 AM – 6:00 PM</p>
-        </div>
-
-    </section>
-
+        <!-- CONTACT DETAILS -->
+        <p><strong>Email:</strong> support@dealerreview.com</p>
+        <p><strong>Phone:</strong> +1-123-456-7890</p>
+        <p><strong>Address:</strong> 123 Main Street, Kansas, USA</p>
+    </div>
 </body>
 </html>
